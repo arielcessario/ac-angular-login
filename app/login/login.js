@@ -1,7 +1,8 @@
 (function () {
     'use strict';
 
-    var destinationWebsite = "http://192.185.67.199/~arielces/playground/redirect/#/verify-login/";
+    var destinationWebsite = "http://localhost/test-login/app/#/verify-login/";
+    //var destinationWebsite = "http://192.185.67.199/~arielces/playground/redirect/#/verify-login/";
 
     angular.module('login.login', ['ngRoute', 'ngCookies', 'toastr'])
     //angular.module('login.login', ['ngRoute', 'ngCookies'])
@@ -33,7 +34,7 @@
         // Variables
 	vm.username = '';
         vm.password = '';
-        vm.changePwd = '0';
+        vm.changePwd = 0;
         
         // Functions declaration
         vm.login = login;
@@ -51,9 +52,9 @@
                     LoginService.login(vm.username, vm.password, function (data){
                         console.log(data);
                         if(data.response) {                            
-                            //var user = JSON.parse(data.user);
+                            var user = JSON.parse(data.user);
                             vm.changePwd = user.change_pwd;
-                            if(user.changepwd === '0') {
+                            if(user.change_pwd === 0) {
                                 //$window.location.href = destinationWebsite;
                                 LoginService.setLogged(user.user_name, user.usuario_id, user.rol_id, user.token);
                             }                                
