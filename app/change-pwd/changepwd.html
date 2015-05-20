@@ -1,0 +1,34 @@
+<div class="title ng-scope">
+    <h1 class="text-center">Cambie su contrase&ntilde;a</h1>
+</div>
+<div class="v-spacer ng-scope"></div>
+
+<form ng-controller="ChangePwdCtrl as changePwdCtrl" name="changeForm" class="ng-pristine ng-scope ng-invalid ng-invalid-required ng-valid-maxlength">
+    <p>Ingrese su direcci&oacute;n de email y su contrase&ntilde;a actual.</p><br><br>
+    <div class="form-flex">
+        <div class="full-width">
+            <input type="email" id="email" name="email" ng-model="changePwdCtrl.email" required class="full-width"/>
+            <br>
+            <label for="email">Introduzca su Email</label>
+        </div>
+        <div class="full-width">
+            <input type="password" id="password" ng-model="changePwdCtrl.password" name="password" required class="full-width"/>
+            <br>
+            <label for="password">Contrase&ntilde;a actual</label>
+        </div>
+        <div class="full-width">
+            <input type="password" id="password_1" ng-model="changePwdCtrl.password_1" name="password_1" required class="full-width"/>
+            <br>
+            <label for="password_1">Nueva contrase&ntilde;a</label>
+        </div>
+        <div class="full-width">
+            <input type="password" id="password_2" ng-model="changePwdCtrl.password_2" name="password_2" required class="full-width"/>
+            <br>
+            <label for="password_2">Repetir contrase&ntilde;a</label>
+        </div>
+    </div>
+    <div class="btn ng-scope">
+        <input type="button" class="relieve-2 btn-ok btn-medium" ng-click="changePwdCtrl.changePassword()" value=""/>
+        <label>Guardar contrase&ntilde;a</label>
+    </div>
+</form>

@@ -1,0 +1,703 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,500,700|Open+Sans);
+/* line 5, ../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 20, estilo-base.scss */
+body {
+  font-family: "Open Sans";
+  font-size: 18px;
+  background-color: #ececec;
+}
+
+/* line 27, estilo-base.scss */
+.ac-main {
+  position: absolute;
+  z-index: 1;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  padding: 20px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  box-shadow: 0px 2px 4px #AAAAAA;
+}
+@media (min-width: 1026px) {
+  /* line 27, estilo-base.scss */
+  .ac-main {
+    width: 80%;
+    max-width: 80%;
+    margin-left: 10%;
+  }
+}
+@media (max-width: 1025px) {
+  /* line 27, estilo-base.scss */
+  .ac-main {
+    width: 96%;
+    max-width: 96%;
+    margin-left: 2%;
+  }
+}
+
+/* line 58, estilo-base.scss */
+.ac-main.ng-enter {
+  -webkit-animation: view-enter 0.5s !important;
+  -moz-animation: view-enter 0.5s !important;
+  -ms-animation: view-enter 0.5s !important;
+  -o-animation: view-enter 0.5s !important;
+  animation: view-enter 0.5s !important;
+}
+
+/* line 66, estilo-base.scss */
+.ac-main.ng-leave {
+  -webkit-animation: view-leave 0.5s !important;
+  -moz-animation: view-leave 0.5s !important;
+  -ms-animation: view-leave 0.5s !important;
+  -o-animation: view-leave 0.5s !important;
+  animation: view-leave 0.5s !important;
+}
+
+@-webkit-keyframes view-enter {
+  from {
+    transform: scale(0, 0);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes view-leave {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0, 1000px);
+  }
+}
+/* line 99, estilo-base.scss */
+.ac-login {
+  width: 20%;
+  max-width: 20%;
+  margin-left: 40%;
+  min-height: 40%;
+}
+
+/* line 109, estilo-base.scss */
+.form-flex, .lista-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* line 118, estilo-base.scss */
+.total {
+  font-weight: 700;
+  border: 0px solid;
+  border-top-color: rgba(59, 80, 206, 0.1);
+  border-top-width: 1px;
+}
+
+/* line 127, estilo-base.scss */
+.form-flex {
+  flex-wrap: wrap;
+}
+
+/* line 132, estilo-base.scss */
+.lista-flex {
+  flex-wrap: nowrap;
+  border: solid 0px;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(59, 80, 206, 0.1);
+}
+
+/* line 139, estilo-base.scss */
+.con-anim {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* line 147, estilo-base.scss */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+  border: solid 0px;
+  border-bottom-width: 1px;
+  border-bottom-color: #2196F3;
+  background-color: transparent;
+  margin: 10px;
+}
+
+/* line 158, estilo-base.scss */
+select {
+  min-width: 200px;
+  margin: 10px !important;
+  border: solid 0px;
+  border-bottom-width: 1px;
+  border-bottom-color: #2196F3;
+  background-color: transparent;
+}
+
+/* line 167, estilo-base.scss */
+input[type="number"] {
+  max-width: 200px;
+  width: auto;
+}
+
+/* line 172, estilo-base.scss */
+*:focus {
+  outline: 0;
+}
+
+/* line 176, estilo-base.scss */
+input[type="text"] ~ label,
+input[type="password"] ~ label,
+input[type="email"] ~ label,
+input[type="number"] ~ label,
+select ~ label {
+  color: #666666;
+  position: relative;
+  top: -30px;
+  margin-left: 10px;
+  pointer-events: none;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* line 193, estilo-base.scss */
+input[type="text"]:focus ~ label,
+input[type="text"]:valid ~ label,
+input[type="password"]:focus ~ label,
+input[type="password"]:valid ~ label,
+input[type="email"]:focus ~ label,
+input[type="email"]:valid ~ label,
+input[type="number"]:focus ~ label,
+input[type="number"]:valid ~ label,
+select ~ label {
+  color: #000000;
+  top: -60px;
+  font-size: 16px;
+}
+
+/* line 232, estilo-base.scss */
+.btn {
+  display: inline-block;
+}
+
+/* line 236, estilo-base.scss */
+.btn-small {
+  border-radius: 20px;
+  height: 20px;
+  width: 20px;
+  border: 0px solid;
+  color: #ffffff;
+  margin: 10px;
+}
+
+/* line 244, estilo-base.scss */
+.btn-small ~ label {
+  position: absolute;
+  margin-top: -20px;
+  margin-left: 40px;
+  background-color: rgba(90, 90, 90, 0.8);
+  padding: 5px;
+  color: #ffffff;
+  border-radius: 4px;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+/* line 248, estilo-base.scss */
+.btn-medium {
+  border-radius: 35px;
+  height: 35px;
+  width: 35px;
+  border: 0px solid;
+  color: #ffffff;
+  margin: 10px;
+}
+
+/* line 256, estilo-base.scss */
+.btn-medium ~ label {
+  position: absolute;
+  margin-top: -40px;
+  margin-left: 50px;
+  background-color: rgba(90, 90, 90, 0.8);
+  padding: 5px;
+  color: #ffffff;
+  border-radius: 4px;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+/* line 260, estilo-base.scss */
+.btn-big {
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  border: 0px solid;
+  color: #ffffff;
+  margin: 10px;
+}
+
+/* line 268, estilo-base.scss */
+.btn-big ~ label {
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 70px;
+  background-color: rgba(90, 90, 90, 0.8);
+  padding: 5px;
+  color: #ffffff;
+  border-radius: 4px;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+/* line 272, estilo-base.scss */
+.btn-back {
+  background: url("icons/core/arrow-back.svg") no-repeat 50% 50%;
+  -webkit-filter: invert(100%);
+  background-size: 60% 60%;
+}
+
+/* line 278, estilo-base.scss */
+.btn-archive {
+  background: #FF9800 url("icons/core/archive.svg") no-repeat 50% 50%;
+  background-size: 60% 60%;
+}
+
+/* line 284, estilo-base.scss */
+.btn-lock {
+  background: url("icons/core/lock-outline.svg") no-repeat 50% 50%;
+  -webkit-filter: invert(100%);
+  background-size: 60% 60%;
+}
+
+/* line 290, estilo-base.scss */
+.btn-add {
+  background: #51a351 url("icons/core/add.svg") no-repeat 50% 50%;
+  background-size: 60% 60%;
+}
+
+/* line 295, estilo-base.scss */
+.btn-lock-open {
+  background: #FF9800 url("icons/core/lock-open.svg") no-repeat 50% 50%;
+  background-size: 60% 60%;
+}
+
+/* line 300, estilo-base.scss */
+.btn-ok {
+  background: #51a351 url("icons/core/done.svg") no-repeat 50% 50%;
+  background-size: 60% 60%;
+}
+
+/* line 305, estilo-base.scss */
+.btn-cut {
+  background: #FF9800 url("icons/core/content-cut.svg") no-repeat 50% 50%;
+  background-size: 60% 60%;
+}
+
+/* line 310, estilo-base.scss */
+.btn-delete {
+  background: #F44336 url("icons/core/delete.svg") no-repeat 50% 50%;
+  background-size: 60% 60%;
+}
+
+/* line 315, estilo-base.scss */
+.btn-delete-black {
+  background: url("icons/core/delete-black.svg") no-repeat 50% 50%;
+  background-size: 60% 60%;
+}
+
+/* line 320, estilo-base.scss */
+.btn-like {
+  background: #03A9F4 url("icons/core/thumb-up.svg") no-repeat 50% 50%;
+  background-size: 60% 60%;
+}
+
+/* line 325, estilo-base.scss */
+.btn-refresh {
+  background: #03A9F4 url("icons/core/refresh.svg") no-repeat 50% 50%;
+  background-size: 60% 60%;
+}
+
+/* line 330, estilo-base.scss */
+.btn-close {
+  background: #F44336 url("icons/core/close.svg") no-repeat 50% 50%;
+  background-size: 60% 60%;
+}
+
+/* line 335, estilo-base.scss */
+.btn-visibility {
+  background: #03A9F4 url("icons/core/visibility.svg") no-repeat 50% 50%;
+  background-size: 60% 60%;
+}
+
+/* line 340, estilo-base.scss */
+input[type=submit]:hover ~ label,
+input[type=button]:hover ~ label,
+button:hover ~ label {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* line 347, estilo-base.scss */
+.relieve-2 {
+  box-shadow: 0px 5px 10px #adadad;
+  -webkit-transition: all .3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* line 357, estilo-base.scss */
+.relieve-2:hover {
+  box-shadow: 0px 10px 15px #ababab;
+}
+
+/* line 362, estilo-base.scss */
+span {
+  display: inline-block;
+  width: 150px;
+  margin: 5px;
+  padding: 5px;
+}
+@media (max-width: 1025px) {
+  /* line 362, estilo-base.scss */
+  span {
+    width: 100px !important;
+  }
+}
+
+/* line 374, estilo-base.scss */
+.descr {
+  min-width: 400px !important;
+  max-width: 400px !important;
+  max-height: 100px;
+  overflow: auto;
+}
+@media (max-width: 1025px) {
+  /* line 374, estilo-base.scss */
+  .descr {
+    width: 300px;
+  }
+}
+
+/* line 387, estilo-base.scss */
+.descr-corta {
+  min-width: 200px !important;
+  max-width: 200px !important;
+  max-height: 100px;
+  overflow: auto;
+}
+@media (max-width: 1025px) {
+  /* line 387, estilo-base.scss */
+  .descr-corta {
+    width: 150px;
+  }
+}
+
+/* line 399, estilo-base.scss */
+.title {
+  position: absolute;
+  color: #ffffff;
+  background-color: #4285f4;
+  padding: 10px;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  margin-bottom: 40px !important;
+  display: flex;
+}
+
+/* line 414, estilo-base.scss */
+h1 {
+  font-family: Roboto, serif;
+  font-weight: 400;
+  font-size: 25px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+/* line 422, estilo-base.scss */
+h2 {
+  font-family: Roboto, serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 5px;
+  margin-bottom: 15px;
+  padding: 5px;
+  min-width: 200px;
+}
+
+/* line 432, estilo-base.scss */
+h3 {
+  font-family: Roboto, serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+@media (max-width: 1025px) {
+  /* line 432, estilo-base.scss */
+  h3 {
+    width: 100px !important;
+  }
+}
+
+/* line 444, estilo-base.scss */
+.no-margin {
+  margin: 0px !important;
+}
+
+/* line 450, estilo-base.scss */
+.ac-grid .cabecera h3 {
+  width: 130px;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+}
+/* line 461, estilo-base.scss */
+.ac-grid .descr-grid {
+  width: 200px;
+  min-width: 200px;
+}
+/* line 467, estilo-base.scss */
+.ac-grid div span, .ac-grid div input {
+  width: 130px !important;
+}
+@media (max-width: 1025px) {
+  /* line 467, estilo-base.scss */
+  .ac-grid div span, .ac-grid div input {
+    width: 100px !important;
+  }
+}
+
+/* line 477, estilo-base.scss */
+.full-width {
+  width: 100% !important;
+}
+
+/* line 481, estilo-base.scss */
+.line {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 486, estilo-base.scss */
+.line-separator {
+  width: 100%;
+  border: 0 solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #ababab;
+}
+
+/* line 494, estilo-base.scss */
+.v-spacer {
+  height: 60px;
+  width: 0px;
+}
+
+/* line 501, estilo-base.scss */
+.half-v-spacer {
+  height: 20px;
+  width: 0px;
+}
+
+/* line 507, estilo-base.scss */
+.selected {
+  background-color: #009688;
+  color: #ffffff;
+}
+
+/* line 512, estilo-base.scss */
+.label--checkbox {
+  position: relative;
+  margin: .5rem;
+  font-family: Arial, sans-serif;
+  line-height: 135%;
+  cursor: pointer;
+}
+
+/* line 523, estilo-base.scss */
+.checkbox {
+  position: relative;
+  top: -0.375rem;
+  margin: 0 1rem 0 0;
+  cursor: pointer;
+}
+/* line 531, estilo-base.scss */
+.checkbox:before {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  content: "";
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid #f2f2f2;
+}
+/* line 547, estilo-base.scss */
+.checkbox:checked:before {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  height: .5rem;
+  border-color: #009688;
+  border-top-style: none;
+  border-right-style: none;
+}
+/* line 558, estilo-base.scss */
+.checkbox:after {
+  content: "";
+  position: absolute;
+  top: -0.125rem;
+  left: 0;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* line 574, estilo-base.scss */
+.button--round {
+  -moz-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  width: 2rem;
+  height: 2rem;
+  background: #5677fc;
+  border-radius: 50%;
+  box-shadow: 0 0.125rem 0.3125rem 0 rgba(0, 0, 0, 0.25);
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+/* line 589, estilo-base.scss */
+.button--round i {
+  font-size: 1rem;
+  line-height: 220%;
+  vertical-align: middle;
+}
+/* line 595, estilo-base.scss */
+.button--round:hover {
+  background: #3b50ce;
+}
+
+/* line 600, estilo-base.scss */
+.button--sticky {
+  position: fixed;
+  right: 2rem;
+  top: 16rem;
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(6.25rem);
+    transform: translateY(6.25rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(6.25rem);
+    transform: translateY(6.25rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,43 @@
+<div class="title ng-scope">
+    <!--img src="./img/recovery.png" class="login" height="30"-->
+    <h1 class="text-center">Iniciar Sesi&oacute;n</h1>
+</div>
+<div class="v-spacer ng-scope"></div>
+
+<div id="login-main" ng-controller="LoginCtrl as loginCtrl" class="ng-pristine ng-scope ng-invalid ng-invalid-required ng-valid-maxlength">
+    <div id="login-container">
+        <div class="form-flex">
+            <div class="full-width">
+                <input type="text" ng-model="loginCtrl.username" id="login-user" required class="full-width"/>
+                <br>
+                <label for="login-user">Usuario</label>
+            </div>
+            <div class="full-width">
+                <input type="password" ng-model="loginCtrl.password" id="login-pass" required class="full-width"/>
+                <br>
+                <label for="login-pass">Password</label>
+            </div>
+        </div>
+        <div ng-if="loginCtrl.changePwd == '1'">
+            <p>Por favor cambie la contrase&ntilde;a temporal</p>
+        </div>
+        <div style="display:flex; justify-content:space-between;">
+            <div class="btn ng-scope">
+                <input type="button" class="relieve-2 btn-ok btn-medium" ng-click="loginCtrl.login()" value=""/>
+                <label>Ingresar</label>
+            </div>
+            <div class="btn ng-scope">
+                <input type="button" class="relieve-2 btn-add btn-medium" ng-click="loginCtrl.createUser()" value=""/>
+                <label>Crear Usuario</label>
+            </div>
+            <div class="btn ng-scope">
+                <input type="button" class="relieve-2 btn-refresh btn-medium" ng-click="loginCtrl.recoveryPwd()" value=""/>
+                <label>Recuperar contrase&ntilde;a</label>
+            </div>
+            <div class="btn ng-scope">
+                <input type="button" class="relieve-2 btn-lock-open btn-medium" ng-click="loginCtrl.changePwd()" value=""/>
+                <label>Cambiar contrase&ntilde;a</label>
+            </div>
+        </div>
+    </div>
+</div>

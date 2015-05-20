@@ -1,0 +1,22 @@
+<div id="" >
+    <div class="title ng-scope">
+        <h1>¿Olvido su contrase&ntilde;a?</h1>
+    </div>
+    <div class="v-spacer ng-scope"></div>
+
+    <form ng-controller="RecoveryCtrl as recoveryCtrl" name="recoveryForm" class="ng-pristine ng-scope ng-invalid ng-invalid-required ng-valid-maxlength">
+        <p>Por favor, introduzca su direcci&oacute;n de email y nuestro sistema le enviar&aacute; su nueva contrase&ntilde;a de acceso.</p>
+        <br><br>
+        <div class="form-flex">
+            <div class="full-width">
+                <input type="email" id="email" name="email" ng-model="recoveryCtrl.email" required class="full-width"/>
+                <br>
+                <label for="email">Introduzca su Email</label>
+            </div>            
+        </div>
+        <div class="btn ng-scope">
+            <input type="button" class="relieve-2 btn-ok btn-medium" ng-click="recoveryCtrl.sendMail()" value=""/>
+            <label>Enviar mi contrase&ntilde;a</label>
+        </div>
+    </form>
+</div>

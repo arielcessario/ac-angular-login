@@ -1,0 +1,48 @@
+<div class="title ng-scope">
+    <h1 class="text-center">Crear Usuario</h1>
+</div>
+<div class="v-spacer ng-scope"></div>
+
+<form ng-controller="CrearCtrl as crearCtrl" name="userForm" novalidate class="ng-pristine ng-scope ng-invalid ng-invalid-required ng-valid-maxlength">
+    <p>Por favor ingrese todos los datos.</p><br><br>
+    <div class="form-flex">
+        <div class="full-width">
+            <input type="text" id="nombre" name="nombre" ng-model="crearCtrl.nombre" required class="full-width" ng-maxlength="45"/>
+            <br>
+            <label for="nombre">Nombre</label>
+        </div>
+        <div class="full-width">
+            <input type="text" id="apellido" name="apellido" ng-model="crearCtrl.apellido"  required class="full-width" ng-maxlength="45"/>
+            <br>
+            <label for="apellido">Apellido</label>
+        </div>
+        <div class="full-width">
+            <input type="text" id="usuario" name="usuario" ng-model="crearCtrl.username" required class="full-width" ng-maxlength="45"/>
+            <br>
+            <label for="usuario">Usuario</label>
+        </div>
+        <div class="full-width">
+            <input type="password" id="password" name="password" ng-model="crearCtrl.password"  required class="full-width" ng-maxlength="25" />
+            <br>
+            <label for="password">Contrase&ntilde;a</label>
+        </div>
+        <div class="full-width">
+            <input type="password" id="password_repeat" name="password_repeat" ng-model="crearCtrl.password_repeat"  required class="full-width" ng-maxlength="25" />
+            <br>
+            <label for="password_repeat">Confirmar contrase&ntilde;a</label>
+        </div>
+    </div>
+    <div class="btn ng-scope">
+        <input type="button" class="relieve-2 btn-ok btn-medium" ng-click="crearCtrl.create();" value="" />
+        <label>Crear usuario</label>
+        <!--div ng-click="crearCtrl.test();">test</div-->
+    </div>
+    
+    <!--div>Nombre<br>
+        <input type="text" name="nombre" ng-model=""  required>
+        <span style="color:red" ng-show="userForm.nombre.$dirty && userForm.nombre.$invalid">
+            <span ng-show="userForm.nombre.$error.required">Debe ingresar un Nombre</span>
+            <span ng-show="userForm.password.$error.maxlength">El Nombre es demasiado largo (Máximo 45)</span>
+        </span>
+    </div-->
+</form>
